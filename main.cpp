@@ -25,15 +25,17 @@ public:
     void setblue(int b)      { blue = b; }
 
     void  print(){
+        cout << " " << endl;
         cout << "color output: " << blue << endl;
         cout << "color output: " << green << endl;
         cout << "color output: " << red << endl;
+        cout << " " << endl;
     }
 
     
 };
 
-void print(color);
+void print();
 
 int main(){
 
@@ -42,7 +44,18 @@ int main(){
     DarkRed.setblue(2);
     DarkRed.setgreen(3);
     DarkRed.print();
-    print(DarkRed);
+    
+    color DarkGreen;
+    DarkRed.setred(3);
+    DarkRed.setblue(2);
+    DarkRed.setgreen(3);
+    DarkRed.print();
+    
+    color Darkblue;
+    DarkRed.setred(1);
+    DarkRed.setblue(2);
+    DarkRed.setgreen(3);
+    DarkRed.print();
 
     return 0;
     
